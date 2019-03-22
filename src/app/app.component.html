@@ -9,40 +9,20 @@ include_js: false
 <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
   <header class="masthead mb-auto">
     <div class="inner">
-      <h3 class="masthead-brand"><img src="assets/img/Logo_ZP_50x50.png" alt="">&nbsp;{{ title }}</h3>
+      <h3 class="masthead-brand" routerLinkActive="active">
+        <a class="nav-link" routerLink="/home">
+          <img src="assets/img/Logo_ZP_50x50.png" alt="">&nbsp;{{ title }}
+        </a>
+      </h3>
+
       <nav class="nav nav-masthead justify-content-center">
-        <!-- <a class="nav-link active" href="#">Home</a> -->
-        <!-- <a class="nav-link" href="#">Features</a>
-        <a class="nav-link" href="#">Contact</a> -->
+        <!-- <a class="nav-link" routerLinkActive="active" routerLink='/products'>Products</a>
+        <a class="nav-link" routerLinkActive="active" routerLink='/recommendations'>Recommendations</a> -->
       </nav>
     </div>
   </header>
 
-  <main role="main" class="inner cover">
-    <div class="row">
-      <hr>
-    </div>
-    <div class="row">
-      <div class="col-lg-6">
-        <img src="assets/img/zachary_peters.jpg" alt="Zachary Peters" style="max-width: 100%;">
-      </div>
-      <div class="col-lg-6">
-        <h1 class="cover-heading">Thanks for stopping by!</h1>
-        <p class="lead">This site is currently undergoing a <strong><em>massive</em></strong> overhaul. Be sure to check back soon for more.</p>
-        <p class="lead">In the meanwhile, feel free to check me out on:</p>
-        <p class="lead"><a href="https://www.linkedin.com/in/zapeters/" class="btn btn-lg btn-primary">
-            <fa name="linkedin-square"></fa>&nbsp;LinkedIn
-          </a></p>
-        <p class="lead"><a href="https://stackoverflow.com/story/zack-does-stuff" class="btn btn-lg btn-secondary">
-            <fa name="stack-overflow"></fa>&nbsp;Stack Overflow
-          </a></p>
-        <p class="lead"><a href="https://github.com/zackpeters93" class="btn btn-lg btn-success">
-            <fa name="github-square"></fa>&nbsp;Github
-          </a></p>
-      </div>
-    </div>
-
-  </main>
+  <router-outlet></router-outlet>
 
   <footer class="mastfoot mt-auto">
     <div class="inner">
