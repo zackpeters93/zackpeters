@@ -1,0 +1,32 @@
+<!-- ---
+layout: examples
+title: Cover Template
+extra_css: "cover.css"
+body_class: "text-center"
+include_js: false
+--- -->
+
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="masthead mb-auto">
+    <div class="inner">
+      <h3 class="masthead-brand" routerLinkActive="active">
+        <a class="nav-link" routerLink="/home">
+          <img src="assets/img/Logo_ZP_50x50.png" alt="">&nbsp;{{ title }}
+        </a>
+      </h3>
+
+      <nav class="nav nav-masthead justify-content-center">
+        <!-- <a class="nav-link" routerLinkActive="active" routerLink='/products'>Products</a>
+        <a class="nav-link" routerLinkActive="active" routerLink='/recommendations'>Recommendations</a> -->
+      </nav>
+    </div>
+  </header>
+
+  <router-outlet></router-outlet>
+
+  <footer class="mastfoot mt-auto">
+    <div class="inner">
+      <p>zackpeters.com&nbsp;&copy;2019</p>
+    </div>
+  </footer>
+</div>
